@@ -1,4 +1,4 @@
-import ImageSlider from "./ImageSlider";
+import { BUSINESS } from "@/lib/schema";
 
 const STEPS = [
   {
@@ -25,14 +25,6 @@ const STEPS = [
     description:
       "Every repair goes through a final quality check before we hand you back the keys.",
   },
-];
-
-const SLIDER_IMAGES = [
-  "/images/process/process-1.jpg",
-  "/images/process/process-2.jpg",
-  "/images/process/process-3.jpg",
-  "/images/process/process-4.jpg",
-  "/images/process/process-5.jpg",
 ];
 
 export default function ProcessSteps() {
@@ -64,7 +56,18 @@ export default function ProcessSteps() {
             ))}
           </div>
 
-          <ImageSlider images={SLIDER_IMAGES} />
+          <div className="aspect-[4/3] rounded-lg overflow-hidden">
+            <iframe
+              src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45000!2d${BUSINESS.lng}!3d${BUSINESS.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0:0x0!2zNDXCsDAzJzU4LjAiTiA4N8KwMzcnNDguMCJX!5e0!3m2!1sen!2sus!4v1`}
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen={false}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Corey's Auto Body location on Google Maps"
+            />
+          </div>
         </div>
       </div>
     </section>
