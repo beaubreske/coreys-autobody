@@ -46,8 +46,11 @@ export function localBusinessSchema() {
       },
       geoRadius: "40234",
     },
+    image: `${BUSINESS.url}/images/logo.png`,
+    logo: `${BUSINESS.url}/images/logo.png`,
     sameAs: [
       `https://www.google.com/maps?cid=${BUSINESS.placeId}`,
+      "https://www.facebook.com/coreysautobodyllc/",
     ],
     openingHoursSpecification: {
       "@type": "OpeningHoursSpecification",
@@ -103,6 +106,29 @@ export function serviceSchema(service: {
       geoRadius: "40234",
     },
     description: service.description,
+  };
+}
+
+export function imageGallerySchema(
+  images: { url: string; name: string; description: string }[]
+) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "Work Gallery",
+    description: "Real examples of auto body repair and restoration work from Corey's Auto Body in Marinette, WI.",
+    numberOfItems: images.length,
+    itemListElement: images.map((img, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      item: {
+        "@type": "ImageObject",
+        contentUrl: img.url,
+        name: img.name,
+        description: img.description,
+        creator: { "@id": `${BUSINESS.url}/#organization` },
+      },
+    })),
   };
 }
 
