@@ -14,11 +14,6 @@ const TESTIMONIALS = [
     text: "Best auto body shop in the area. Fair pricing and the quality of work is outstanding.",
     stars: 5,
   },
-  {
-    name: "Stephanie",
-    text: "Took my car here after a fender bender. Fast turnaround and the paint match was perfect. Will definitely come back.",
-    stars: 5,
-  },
 ];
 
 function Stars({ count }: { count: number }) {
@@ -46,7 +41,7 @@ export default function TestimonialCards() {
           What Our Customers Say
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {TESTIMONIALS.map((t) => (
             <div
               key={t.name}
