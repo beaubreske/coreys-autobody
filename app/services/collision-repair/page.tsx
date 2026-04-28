@@ -206,7 +206,7 @@ export default function CollisionRepairPage() {
             Ready to Get Started?
           </h2>
           <p className="text-gray-300 mb-6 font-[family-name:var(--font-syne)] italic">
-            Call us for a free estimate. 7-day availability.
+            Call us for a free estimate. Mon-Fri 8am-5pm.
           </p>
           <a
             href={`tel:${BUSINESS.phone}`}

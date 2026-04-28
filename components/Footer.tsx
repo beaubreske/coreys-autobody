@@ -46,6 +46,8 @@ export default function Footer() {
                   {BUSINESS.phoneDisplay}
                 </a>
               </p>
+              <p className="mt-3 text-gray-500 text-xs uppercase tracking-wider font-bold">Hours</p>
+              <p>Mon-Fri: 8:00 AM - 5:00 PM</p>
             </address>
           </div>
 

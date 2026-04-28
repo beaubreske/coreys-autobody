@@ -4,7 +4,7 @@ import { BUSINESS } from "@/lib/schema";
 
 const STATS = [
   { value: "5+", label: "Years in Business" },
-  { value: "7", label: "Days a Week" },
+  { value: "M-F", label: "8am - 5pm" },
   { value: "100%", label: "Transparency" },
   { value: "All", label: "Insurance Accepted" },
 ];
@@ -75,7 +75,7 @@ export default function AboutSection() {
               "Full vehicle restorations from frame to finish",
               "Specialized Corvette body and restoration work",
               "Insurance claims handled for you",
-              "7-day availability, we work around your schedule",
+              "Free estimates, no pressure, no upselling",
             ].map((item) => (
               <li
                 key={item}

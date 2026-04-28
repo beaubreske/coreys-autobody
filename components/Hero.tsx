@@ -29,7 +29,7 @@ export default function Hero() {
           </a>
 
           <p className="mt-4 text-white font-bold italic text-sm font-[family-name:var(--font-days-one)]">
-            7-Day Availability
+            Mon-Fri 8am-5pm
           </p>
         </div>
       </div>

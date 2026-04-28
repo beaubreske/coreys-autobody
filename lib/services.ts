@@ -43,7 +43,7 @@ export const SERVICES: ServiceData[] = [
     ],
     relatedSlugs: ["insurance-work", "auto-painting", "rust-repair"],
     metaTitle: "Collision Repair in Marinette, WI",
-    metaDescription: "Collision repair at Corey's Auto Body in Marinette, WI. From fender benders to major damage. Factory-spec repairs, insurance handled, 7-day availability. (715) 716-6217",
+    metaDescription: "Collision repair at Corey's Auto Body in Marinette, WI. From fender benders to major damage. Factory-spec repairs, insurance handled. Free estimates. (715) 716-6217",
   },
   {
     name: "Corvette Work",

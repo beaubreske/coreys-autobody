@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     template: "%s | Corey's Auto Body",
   },
   description:
-    "Marinette, WI auto body shop specializing in collision repair, rust repair, auto painting, and full restorations. 7-day availability. Free estimates. (715) 716-6217",
+    "Marinette, WI auto body shop specializing in collision repair, rust repair, auto painting, and full restorations. Mon-Fri 8am-5pm. Free estimates. (715) 716-6217",
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     siteName: BUSINESS.name,
     title: "Corey's Auto Body | Collision Repair & Restoration in Marinette, WI",
     description:
-      "Marinette, WI auto body shop specializing in collision repair, rust repair, auto painting, and full restorations. 7-day availability. Free estimates.",
+      "Marinette, WI auto body shop specializing in collision repair, rust repair, auto painting, and full restorations. Mon-Fri 8am-5pm. Free estimates.",
   },
   alternates: {
     canonical: BUSINESS.url,

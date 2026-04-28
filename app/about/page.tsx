@@ -108,9 +108,9 @@ export default function AboutPage() {
 
               <p>
                 We work with all major insurance companies and handle the claims
-                process for you. Our 7-day availability means we work around
-                your schedule because getting your vehicle fixed shouldn&apos;t
-                mean rearranging your life.
+                process for you. We're open Monday through Friday, 8am to 5pm,
+                and we work to get your vehicle back to you as quickly as
+                possible without cutting corners.
               </p>
 
               <p>
@@ -229,9 +229,9 @@ export default function AboutPage() {
                   "See the process. Understand the work. Know what you're paying for. Photo updates, open-door policy, and no surprises on your bill.",
               },
               {
-                title: "7-Day Availability",
+                title: "Mon-Fri 8am-5pm",
                 description:
-                  "We work around your schedule, not the other way around. Drop off or pick up any day of the week. We respect your time.",
+                  "We're here Monday through Friday to get your vehicle taken care of. Drop off in the morning, pick up when it's done.",
               },
               {
                 title: "Insurance Handled",

@@ -5,11 +5,11 @@ import { BUSINESS, breadcrumbSchema } from "@/lib/schema";
 export const metadata: Metadata = {
   title: "Contact Us",
   description:
-    "Contact Corey's Auto Body in Marinette, WI for a free estimate. Call or text (715) 716-6217. 7-day availability.",
+    "Contact Corey's Auto Body in Marinette, WI for a free estimate. Call or text (715) 716-6217. Mon-Fri 8am-5pm.",
   openGraph: {
     title: "Contact Corey's Auto Body | Marinette, WI",
     description:
-      "Get a free estimate from Corey's Auto Body. Call or text (715) 716-6217. 7-day availability in Marinette, WI.",
+      "Get a free estimate from Corey's Auto Body. Call or text (715) 716-6217. Mon-Fri 8am-5pm in Marinette, WI.",
     type: "website",
     url: `${BUSINESS.url}/contact`,
   },
@@ -110,13 +110,10 @@ export default function ContactPage() {
 
             <div className="text-center md:text-left">
               <h3 className="text-sm font-bold text-gray-400 uppercase tracking-wider mb-2 font-[family-name:var(--font-days-one)]">
-                Availability
+                Hours
               </h3>
               <p className="text-gray-300 font-[family-name:var(--font-syne)]">
-                7 days a week
-              </p>
-              <p className="text-gray-400 font-[family-name:var(--font-syne)] text-sm mt-1">
-                We work around your schedule
+                Mon-Fri: 8:00 AM - 5:00 PM
               </p>
             </div>
 
