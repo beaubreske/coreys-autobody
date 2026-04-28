@@ -72,6 +72,17 @@ export default function TestimonialCards() {
             title="Corey's Auto Body Google Reviews"
           />
         </div>
+
+        <div className="mt-6 text-center">
+          <a
+            href={`https://search.google.com/local/reviews?placeid=${BUSINESS.placeId}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary/80 transition-colors font-[family-name:var(--font-days-one)]"
+          >
+            See All Reviews on Google
+          </a>
+        </div>
       </div>
     </section>
   );
