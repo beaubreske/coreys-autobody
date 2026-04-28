@@ -1,4 +1,4 @@
-const REVIEWS_URL = "https://search.google.com/local/reviews?placeid=ChIJKSQwMb6uUk0RThwAhfyu1mE";
+const REVIEWS_URL = "https://www.google.com/search?q=corey%27s+auto+body+marinette+wi#lrd=0x4d52af589ce1fdaf:0x3fe69be5186f304e,3,,,,";
 
 const TESTIMONIALS = [
   {

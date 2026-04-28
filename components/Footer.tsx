@@ -109,6 +109,17 @@ export default function Footer() {
             &copy; {new Date().getFullYear()} {BUSINESS.name}. All rights
             reserved.
           </p>
+          <p className="mt-1">
+            Built by{" "}
+            <a
+              href="https://gxwebstudio.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-gray-400 hover:text-white transition-colors"
+            >
+              GX Web Studio
+            </a>
+          </p>
         </div>
       </div>
     </footer>
