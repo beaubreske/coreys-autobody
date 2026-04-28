@@ -1,3 +1,5 @@
+const REVIEWS_URL = "https://search.google.com/local/reviews?placeid=ChIJKSQwMb6uUk0RThwAhfyu1mE";
+
 const TESTIMONIALS = [
   {
     name: "Teya",
@@ -12,11 +14,6 @@ const TESTIMONIALS = [
   {
     name: "Jordan",
     text: "Best auto body shop in the area. Fair pricing and the quality of work is outstanding.",
-    stars: 5,
-  },
-  {
-    name: "Stephanie",
-    text: "Took my car here after a fender bender. Fast turnaround and the paint match was perfect. Will definitely come back.",
     stars: 5,
   },
 ];
@@ -46,7 +43,7 @@ export default function TestimonialCards() {
           What Our Customers Say
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {TESTIMONIALS.map((t) => (
             <div
               key={t.name}
@@ -61,6 +58,17 @@ export default function TestimonialCards() {
               </p>
             </div>
           ))}
+        </div>
+
+        <div className="mt-10 text-center">
+          <a
+            href={REVIEWS_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary/80 transition-colors font-[family-name:var(--font-days-one)]"
+          >
+            See All Reviews on Google
+          </a>
         </div>
       </div>
     </section>
