@@ -1,4 +1,4 @@
-import { BUSINESS } from "@/lib/schema";
+const REVIEWS_URL = "https://search.google.com/local/reviews?placeid=ChIJKSQwMb6uUk0RThwAhfyu1mE";
 
 const TESTIMONIALS = [
   {
@@ -60,22 +60,9 @@ export default function TestimonialCards() {
           ))}
         </div>
 
-        <div className="rounded-xl overflow-hidden mt-10">
-          <iframe
-            src={`https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1000!2d${BUSINESS.lng}!3d${BUSINESS.lat}!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s${BUSINESS.placeId}!2sCorey's+Auto+Body!5e0!3m2!1sen!2sus`}
-            width="100%"
-            height={450}
-            style={{ border: 0 }}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            allowFullScreen
-            title="Corey's Auto Body Google Reviews"
-          />
-        </div>
-
-        <div className="mt-6 text-center">
+        <div className="mt-10 text-center">
           <a
-            href={`https://search.google.com/local/reviews?placeid=${BUSINESS.placeId}`}
+            href={REVIEWS_URL}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-block bg-primary text-white font-bold py-3 px-8 rounded-lg hover:bg-primary/80 transition-colors font-[family-name:var(--font-days-one)]"
